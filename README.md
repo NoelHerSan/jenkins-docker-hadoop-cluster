@@ -1,6 +1,6 @@
 # Hadoop Cluster
 
-We created small [hadoop][hadoop] cluster for tests.
+Created small [hadoop][hadoop] cluster for tests.
 
 ## Architecture of a Hadoop Cluster
 
