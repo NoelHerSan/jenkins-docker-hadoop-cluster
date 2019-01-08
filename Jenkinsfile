@@ -1,4 +1,4 @@
-node('docker') {
+# node('docker') {
 
     stage 'Checkout'
         checkout scm
@@ -25,4 +25,4 @@ node('docker') {
          sh "docker-compose -f docker-compose.yml down -v"
 #        sh "docker-compose -f docker-compose.integration.yml up --force-recreate --abort-on-container-exit"
 #        sh "docker-compose -f docker-compose.integration.yml down -v"
-}
+#}
