@@ -20,6 +20,7 @@ node('docker') {
       
     stage 'Integration Test'
         //sh 'docker-compose -f docker-compose.integration.yml up'
+         sh "docker-compose build --no-cache"
          sh "docker-compose -f docker-compose.yml up --force-recreate --abort-on-container-exit"
          sh "docker-compose -f docker-compose.yml down -v"
 #        sh "docker-compose -f docker-compose.integration.yml up --force-recreate --abort-on-container-exit"
